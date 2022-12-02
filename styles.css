@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    background-color: rgb(49, 45, 77);
+    background-size: cover;
+    background-blend-mode: luminosity;
+    color: greenyellow;
+    cursor: default;
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.main {
+    position: absolute;
+    left: 1%;
+    top: 2%;
+    width: 50%;
+}
+
+.projects {
+    position: absolute; 
+    left: 35%;
+    top: 2%;
+    width: 53%;
+}
+
+.friends {
+    position: absolute;
+    left: 89%;
+    top: 2%;
+    width: 7.5%;
+}
+
+.extra {
+    position: absolute;
+    left: 1%;
+    top: 21%;
+    width: 33%;
+}
+
+.extra-sub {
+    position: absolute;
+    left: 21%;
+    top: 13%;
+    width: fit-content;
+}
+
+.switch {
+    position: absolute;
+    left: 0%;
+    top: 85%;
+    width: 100%;
+    background-color: rgb(44, 39, 75);
+    border: 2px solid rgb(43, 40, 59);
+    height: 15%;
+}
+
+.warning {
+    position: absolute;
+    left: 65%;
+    top: 89%;
+    width: 100%;
+}
+
+.normal {
+    font-size: x-large;
+}
+
+.subnormal {
+    font-size: large;
+}
+
+.hidden {
+    display: contents;
+}
+
+.badge {
+    align-content: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    color: whitesmoke;
+    display: grid;
+    background-color: rgb(43, 43, 43);
+    border: 2px solid green;
+}
+
+.description {
+    text-align: left;
+}
+
+.special {
+    font-size: x-large;
+    font-family: "Zen Dots", cursive;
+    padding: 1%;
+}
+
+.subspecial {
+    font-size: large;
+    font-family: "Zen Dots", cursive;
+}
+
+.hlinked {
+    font-size: large;
+    color: greenyellow;
+    font-family: "Roboto Mono";
+    background-color: rgb(29, 27, 43);
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hlinked:hover {
+    background-color: rgb(46, 43, 69);
+}
+
+.terminal {
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 10px 10px rgb(29, 27, 43);
+    background-color: black;
+    font-size: medium;
+    font-family: "Roboto Mono";
+    border-color: lightcoral;
+    border-width: 5px;
+    border-radius: 1px;
+    color: greenyellow;
+}
+
+.seperator {
+    width: 100%;
+    border: 1.5px dashed darkgreen;
+}
+
+.sexy-seperator {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid darkgreen;
+}
+
+.lowerterminal {
+    padding: 12.5px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 10px 10px rgb(29, 27, 43);
+    background-color: black;
+    font-size: medium;
+    font-family: "Roboto Mono";
+    border-color: lightcoral;
+    border-width: 5px;
+    border-radius: 1px;
+    color: greenyellow;
+}
+
+section {
+    width: auto;
+    margin: 4px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 3px dashed darkgreen;
+}
+
+p {
+    width: fit-content;
+    height: fit-content;
+    font-size: medium;
+    font-family: "Roboto Mono";
+    margin: 3px;
+}
+
+.title {
+    font-family: "Roboto Mono";
+    font-style: italic;
+}
+
+.code {
+    background-color: rgb(255, 255, 255);
+    font-size: large;
+    color:rgb(0, 0, 0);
+    border: 2px solid grey;
+    border-radius: 3px;
+    white-space: wrap;
+}
+
+input {
+    background-color: rgb(31, 31, 31);
+    font-size: large;
+    font-family: "Roboto Mono";
+    color: white;
+    box-sizing: border-box;
+    border: 2px dotted white;
+    border-radius: 4px;
+    width: auto;
+}
+
+a:link {
+    color: rgb(94, 255, 153);
+}
+
+a:visited {
+    color: rgb(16, 190, 0);
+}
+
+a:hover {
+    color: antiquewhite;
+}
