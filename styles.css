@@ -190,7 +190,7 @@ p {
     color:rgb(0, 0, 0);
     border: 2px solid grey;
     border-radius: 3px;
-    white-space: wrap;
+    white-space: normal;
 }
 
 input {
