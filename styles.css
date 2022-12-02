@@ -137,6 +137,10 @@ body {
     color: greenyellow;
 }
 
+.help {
+    cursor: help;
+}
+
 .seperator {
     width: 100%;
     border: 1.5px dashed darkgreen;
@@ -171,6 +175,10 @@ section {
     border: 3px dashed darkgreen;
 }
 
+section:hover {
+    background-color: rgba(44, 44, 44, 0.624);
+}
+
 p {
     width: fit-content;
     height: fit-content;
@@ -184,13 +192,14 @@ p {
     font-style: italic;
 }
 
-.code {
-    background-color: rgb(255, 255, 255);
-    font-size: large;
-    color:rgb(0, 0, 0);
-    border: 2px solid grey;
+.css-holder {
+    background-color: rgb(54, 54, 54);
+    font-size: large;   
+    border: 2px solid rgb(170, 170, 170);
+    font-family: "Roboto Mono";
     border-radius: 3px;
-    white-space: normal;
+    padding: 2px;
+    color: rgb(255, 255, 255);
 }
 
 input {

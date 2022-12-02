@@ -5,13 +5,13 @@ function applyCss() {
     }
     var st = "";
     for (var i = 0; i < styling.length; i++) {
-        if ((i % 54) == 0 && i > 0 || styling[i+1] == "}" || styling[i+1] == "{" || styling[i-1] == ";") {
-            st += "<br>"
+        if ((i % 54) == 0 && i > 0 || (styling[i+1] == "}" && styling[i] != ";") || styling[i-1] == "{" || styling[i-1] == ";") {
+            st += "\n"
         }
         st += styling[i]
     }
     var code = document.getElementById("code")
-    code.innerHTML = st;
+    code.value = st;
     // add to style object
     var ps = document.head.getElementsByTagName("style");
     if (ps.length > 0) {
