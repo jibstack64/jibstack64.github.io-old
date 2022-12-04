@@ -9,7 +9,7 @@ body {
     cursor: default;
     margin: 0;
     height: 100%;
-    overflow: hidden
+    overflow: scroll;
 }
 
 .center {
@@ -19,64 +19,75 @@ body {
     transform: translate(-50%, -50%); 
 }
 
+/* core mobile changes */
 .mobile {
-    display: none;
+    position: absolute;
+    font-style: italic;
+    left: 3%;
+    top: 1%;
+    width: 94%;
 }
 
 .mcent {
-    display: none;
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main {
     position: absolute;
-    left: 1%;
-    top: 2%;
-    width: 50%;
+    left: 3%;
+    top: 39%;
+    width: 94%;
 }
 
 .projects {
     position: absolute; 
-    left: 35%;
-    top: 2%;
-    width: 53%;
+    left: 3%;
+    top: 72.5%;
+    width: 94%;
 }
 
 .friends {
     position: absolute;
-    left: 89%;
-    top: 2%;
-    width: 7.5%;
+    left: 3%;
+    top: 251%;
+    width: 94%;
 }
 
 .extra {
     position: absolute;
-    left: 1%;
-    top: 21%;
+    left: 3%;
+    top: 50%;
     width: 33%;
+    display: none; /* what mobile user is going to use this...? */
 }
 
 .extra-sub {
     position: absolute;
     left: 21%;
-    top: 13%;
+    top: 23%;
     width: 13%;
+    display: none;
 }
 
 .switch {
     position: absolute;
     left: 0%;
-    top: 85%;
-    width: 100%;
+    top: 95%;
+    width: 35%;
     background-color: rgb(44, 39, 75);
     border: 2px solid rgb(43, 40, 59);
-    height: 15%;
+    height: 161%;
 }
 
 .warning {
     position: absolute;
-    left: 65%;
-    top: 89%;
+    left: 0.5%;
+    top: 245%;
     width: 100%;
+    display: none;
 }
 
 .normal {
@@ -180,7 +191,7 @@ section {
     margin: 4px;
     margin-bottom: 10px;
     padding: 5px;
-    border: 3px dashed darkgreen;
+    border: 3px solid darkgreen;
 }
 
 section:hover {

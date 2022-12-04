@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
     <title>jibstack64();</title>
     <meta content="jibstack64();" property="og:title"/>
-    <meta content="I'm Isaac, a 15 year old software developer from Dorset, England." property="og:description"/>
     <meta content="https://jibstack64.github.io" property="og:url"/>
     <meta content="https://jibstack64.github.io/images/thanos.gif" property="og:image"/>
-    <meta content="#43B581" data-react-helmet="true" name="theme-color"/>
+    <meta content="#FFFFFF" data-react-helmet="true" name="theme-color"/>
 </head>
-<body onload="resetCssHolder">
+<body onload="loadAppropriateStylings()">
+    <div class="mobile">
+        <div class="terminal">
+            <div class="subnormal">
+                HEY! You are on the mobile version of the site - this is under development.<br>
+                I strongly suggest visiting the site on your computer, or using a PC-browser
+                from the app store. My apologies if this site is buggy, feel free to create
+                an issue on this project's <a target="_blank" href="https://github.com/jibstack64/jibstack64.github.io">GitHub repository</a>.
+            </div>
+        </div>
+    </div>
     <div class="main"> 
         <div class="terminal"> 
             <b class="special">jibstack64();</b><br>
@@ -122,9 +131,9 @@ body {
         <div class="terminal">
             <b class="special">Buddies</b>
             <div class="sexy-seperator"></div>
-            <section>
+            <section class="mcent">
                 <div class="badge">
-                    <img src="images/jumbledFox.png" width="125", height="125"><br>
+                    <img class="mcent" src="images/jumbledFox.png" width="125", height="125"><br>
                     <b class="subnormal">JumbledFox</b>
                 </div>
                 <p class="description">
@@ -133,7 +142,7 @@ body {
             </section>
             <section>
                 <div class="badge">
-                    <img src="images/liath.png" width="125", height="125"><br>
+                    <img class="mcent" src="images/liath.png" width="125", height="125"><br>
                     <b class="subnormal">Liathers</b>
                 </div>
                 <p class="description">
