@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="">
     <script src="index.js"></script>
     <title>jibstack64();</title>
     <meta content="jibstack64();" property="og:title"/>
@@ -13,20 +13,18 @@
     <meta content="#FFFFFF" data-react-helmet="true" name="theme-color"/>
 </head>
 <body onload="loadAppropriateStylings()">
-    <div class="mobile">
-        <div class="terminal">
-            <div class="subnormal">
-                HEY! You are on the mobile version of the site - this is under development.<br>
-                I strongly suggest visiting the site on your computer, or using a PC-browser
-                from the app store. My apologies if this site is buggy, feel free to create
-                an issue on this project's <a target="_blank" href="https://github.com/jibstack64/jibstack64.github.io">GitHub repository</a>.
+    <div class="main"> 
+        <div class="warning">
+            <div class="terminal">
+                <div class="help">
+                    This website is designed to work on a desktop screen resolution.<br>
+                    If you experience any issues, this is likely the cause.
+                </div>
             </div>
         </div>
-    </div>
-    <div class="main"> 
         <div class="terminal"> 
             <b class="special">jibstack64();</b><br>
-            <b class="subnormal">A 15 year old software developer from Dorset, England.</b>
+            <b class="subnormal">A 15 year old software engineer from Dorset, England.</b>
         </div>
         <div class="lowerterminal">
             <div class="seperator"></div><br>
@@ -43,13 +41,13 @@
                 <button class="hlinked">Protonmail</button>
             </a>
         </div>
-    </div>
-    <div class="extra">
-        <div class="terminal">
-            <textarea class="css-holder" id="code" title="hi" rows="20" cols="53" disabled>
+        <div class="mobile">Mobile version.</div>
+        <div class="extra">
+            <div class="terminal">
+                <textarea class="css-holder" id="code" title="Loaded CSS" rows="20" cols="53">
 /* Here you can put your own CSS! Cus' why not!
 
-Just plop your one liner into the input field above, click the button, and it will be applied.
+Just copy and paste your CSS here, and push the button above!
 
 If you are looking for the names of classes, elements, etc, use the inspect tool; it has never failed a soul!
 
@@ -58,98 +56,91 @@ Before you ask: I do infact use this to test changes before they are published!!
 body {
     display: initial;
 }
-            </textarea>
+                </textarea>
+            </div>
         </div>
-    </div>
-    <div class="extra-sub">
-        <div class="terminal">
-            <input id="custom-styling" size="15"><b>&nbsp;</b><button class="hlinked" onclick="applyCss();" id="submit" style="float: right;">✓</button>
+        <div class="extra-sub">
+            <div class="terminal">
+                <button class="hlinked" style="width: 1.15vw" onclick="applyCss();" id="submit" style="float: right;">✓</button>
+            </div>
         </div>
-    </div>
-    <div class="switch"></div>
-    <div class="warning">
-        <div class="terminal">
-            <div class="help">
-                This website is designed to work on a desktop screen resolution.<br>
-                If you experience any issues, this is likely the cause.
+        <div class="projects">
+            <div class="terminal">
+                <b class="special">Recent projects</b><br>
+                <div class="sexy-seperator"></div>
+                <section>
+                    <b class="title">know-it-all</b><br>
+                    <p>
+                        Know it all is a standalone executable for managing a set of data; whether it be people, passwords,
+                        or credit-card details you can store it in an organised, catalogable way with KIAL.
+                        It has useful features such as database encryption, decryption, searching and more. I aim to add
+                        SSH(scp) and HTTP(S) reading and writing functionality for externally stored databases.
+                        <a target="_blank" href="https://github.com/jibstack64/know-it-all/releases/latest">Download</a>
+                    </p>
+                </section>
+                <section>
+                    <b class="title">bounce</b><br>
+                    <p>
+                        I hadn't done proper game development for a couple of years until this point; to get back into
+                        the swing of gdev, I decided to make a Pong clone.
+                        <a target="_blank" href="https://github.com/jibstack64/bounce/releases/latest">Download</a>
+                    </p>
+                </section>
+                <section>
+                    <b class="title">boxpush</b><br>
+                    <p>
+                        A small command-line game that I designed and wrote in C++.
+                        You, the smiley face ☺ push the boxes ▩ onto the targets X. It has a series of parameters,
+                        giving the player the option to customise the characters and maps.
+                        <a target="_blank" href="https://github.com/jibstack64/boxpush/releases/latest">Download</a>
+                    </p>
+                </section>
+                <section>
+                    <b class="title">spotispy</b><br>
+                    <p>
+                        Spotis.py is my implementation of a so-called "Playlist sniffer". When ran, it will
+                        constantly "sniff" for playlists on the provided users - if any are removed, or created,
+                        it will be logged to the console and/or a Discord webhook URL.
+                        <a target="_blank" href="https://github.com/jibstack64/spotispy">Download</a>
+                    </p>
+                </section>
+                <section>
+                    <b class="title">pretty</b><br>
+                    <p>
+                        A console colouring library for C++, in a single header file. It is designed for Unix-like systems,
+                        only using escape-sequences, however it does function on Windows 10 given that the program is running
+                        in Powershell or the modern Command Prompt.
+                        <a target="_blank" href="https://github.com/jibstack64/pretty/releases/latest">Download</a>
+                    </p>
+                </section>
+                Check out more projects on my <a target="_blank" href="https://github.com/jibstack64">Github</a>.
+            </div>
+        </div>
+        <div class="friends">
+            <div class="terminal">
+                <b class="special">Buddies</b>
+                <div class="sexy-seperator"></div>
+                <section>
+                    <div class="badge">
+                        <img class="mcent" src="images/jumbledFox.png" width="100%"><br>
+                        <b class="subnormal">JumbledFox</b>
+                    </div>
+                    <p class="description">
+                        This fox has talent, go check out <a target="_blank" href="https://jumbledfox.github.io">him out</a>!
+                    </p>
+                </section>
+                <section>
+                    <div class="badge">
+                        <img class="mcent" src="images/liath.png" width="100%"><br>
+                        <b class="subnormal">Liathers</b>
+                    </div>
+                    <p class="description">
+                        Haven't spoken to this chap in a while, but hes a bloody <a target="_blank" href="https://github.com/Liathers">good programmer</a>!
+                    </p>
+                </section>
             </div>
         </div>
     </div>
-    <div class="projects">
-        <div class="terminal">
-            <b class="special">Recent projects</b><br>
-            <div class="sexy-seperator"></div>
-            <section>
-                <b class="title">know-it-all</b><br>
-                <p>
-                    Know it all is a standalone executable for managing a set of data; whether it be people, passwords,
-                    or credit-card details you can store it in an organised, catalogable way with KIAL.
-                    I aim to implement encryption and decryption features to keep stored data secure, alongside more
-                    configuration.
-                    <a target="_blank" href="https://github.com/jibstack64/know-it-all/releases/latest">Download</a>
-                </p>
-            </section>
-            <section>
-                <b class="title">bounce</b><br>
-                <p>
-                    I hadn't done proper game development for a couple of years until this point; to get back into
-                    the swing of gdev, I decided to make a Pong clone.
-                    <a target="_blank" href="https://github.com/jibstack64/bounce/releases/latest">Download</a>
-                </p>
-            </section>
-            <section>
-                <b class="title">boxpush</b><br>
-                <p>
-                    A small command-line game that I designed and wrote in C++.
-                    You, the smiley face ☺ push the boxes ▩ onto the targets X. It has a series of parameters,
-                    giving the player the option to customise the characters and maps.
-                    <a target="_blank" href="https://github.com/jibstack64/boxpush/releases/latest">Download</a>
-                </p>
-            </section>
-            <section>
-                <b class="title">spotispy</b><br>
-                <p>
-                    Spotis.py is my implementation of a so-called "Playlist sniffer". When ran, it will
-                    constantly "sniff" for playlists on the provided users - if any are removed, or created,
-                    it will be logged to the console and/or a Discord webhook URL.
-                    <a target="_blank" href="https://github.com/jibstack64/spotispy">Download</a>
-                </p>
-            </section>
-            <section>
-                <b class="title">pretty</b><br>
-                <p>
-                    A console colouring library for C++, in a single header file. It is designed for Unix-like systems,
-                    only using escape-sequences, however it does function on Windows 10 given that the program is running
-                    in Powershell or the modern Command Prompt.
-                    <a target="_blank" href="https://github.com/jibstack64/pretty/releases/latest">Download</a>
-                </p>
-            </section>
-            Check out more projects on my <a target="_blank" href="https://github.com/jibstack64">Github</a>.
-        </div>
-    </div>
-    <div class="friends">
-        <div class="terminal">
-            <b class="special">Buddies</b>
-            <div class="sexy-seperator"></div>
-            <section class="mcent">
-                <div class="badge">
-                    <img class="mcent" src="images/jumbledFox.png" width="125", height="125"><br>
-                    <b class="subnormal">JumbledFox</b>
-                </div>
-                <p class="description">
-                    This fox has talent, go check out <a target="_blank" href="https://jumbledfox.github.io">him out</a>!
-                </p>
-            </section>
-            <section>
-                <div class="badge">
-                    <img class="mcent" src="images/liath.png" width="125", height="125"><br>
-                    <b class="subnormal">Liathers</b>
-                </div>
-                <p class="description">
-                    Haven't spoken to this chap in a while, but hes a bloody <a target="_blank" href="https://github.com/Liathers">good programmer</a>!
-                </p>
-            </section>
-        </div>
-    </div>
+    <div class="switch"></div>
 </body>
 </html>

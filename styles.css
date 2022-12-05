@@ -9,7 +9,8 @@ body {
     cursor: default;
     margin: 0;
     height: 100%;
-    overflow: hidden
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .center {
@@ -24,67 +25,69 @@ body {
 }
 
 .mcent {
-    display: none;
+    display: grid;
 }
 
 .main {
     position: absolute;
-    left: 1%;
-    top: 2%;
-    width: 50%;
+    left: 1vw;
+    top: 1vw;
+    width: 31.75vw;
 }
 
 .projects {
     position: absolute; 
-    left: 35%;
-    top: 2%;
-    width: 53%;
+    left: 104%;
+    top: 0;
+    width: 54vw;
 }
 
 .friends {
     position: absolute;
-    left: 89%;
-    top: 2%;
+    left: 278%;
+    top: 0%;
     width: 7.5%;
 }
 
 .extra {
     position: absolute;
-    left: 1%;
-    top: 21%;
+    left: 0%;
+    top: 112%;
     width: 33%;
 }
 
 .extra-sub {
     position: absolute;
-    left: 21%;
-    top: 13%;
-    width: 13%;
+    display: inline;
+    left: 88%;
+    top: 63%;
+    width: 50%;
 }
 
 .switch {
     position: absolute;
-    left: 0%;
-    top: 85%;
+    left: 0vw;
+    top: 41.5vw;
     width: 100%;
     background-color: rgb(44, 39, 75);
-    border: 2px solid rgb(43, 40, 59);
-    height: 15%;
+    border: 0.1vw solid rgb(43, 40, 59);
+    height: 7vw;
 }
 
 .warning {
     position: absolute;
-    left: 65%;
-    top: 89%;
-    width: 100%;
+    z-index: 1000;
+    left: 200%;
+    top: 480%;
+    width: 34vw;
 }
 
 .normal {
-    font-size: x-large;
+    font-size: 1.4vw;
 }
 
 .subnormal {
-    font-size: large;
+    font-size: 0.9vw;
 }
 
 .hidden {
@@ -99,7 +102,7 @@ body {
     color: whitesmoke;
     display: grid;
     background-color: rgb(43, 43, 43);
-    border: 2px solid green;
+    border: 0.11vw solid green;
 }
 
 .description {
@@ -107,23 +110,26 @@ body {
 }
 
 .special {
-    font-size: x-large;
+    font-size: 1.4vw;
     font-family: "Zen Dots", cursive;
     padding: 1%;
 }
 
 .subspecial {
-    font-size: large;
+    font-size: 0.9vw;
     font-family: "Zen Dots", cursive;
 }
 
 .hlinked {
-    font-size: large;
+    font-size: 0.9vw;
     color: greenyellow;
     font-family: "Roboto Mono";
     background-color: rgb(29, 27, 43);
+    height: 1.4vw; /* set width manually for each elem... css is a pain */
+    text-align: center;
+    width: 6vw;
     border: none;
-    display: inline-block;
+    display: inline;
     cursor: pointer;
 }
 
@@ -132,16 +138,13 @@ body {
 }
 
 .terminal {
-    padding: 15px;
+    padding: 0.82vw;
     width: fit-content;
     height: fit-content;
-    box-shadow: 10px 10px rgb(29, 27, 43);
+    box-shadow: 0.65vw 0.65vw rgb(29, 27, 43);
     background-color: black;
-    font-size: medium;
+    font-size: 0.835vw;
     font-family: "Roboto Mono";
-    border-color: lightcoral;
-    border-width: 5px;
-    border-radius: 1px;
     color: greenyellow;
 }
 
@@ -151,48 +154,46 @@ body {
 
 .seperator {
     width: 100%;
-    border: 1.5px dashed darkgreen;
+    border: 0.1vw dashed darkgreen;
 }
 
 .sexy-seperator {
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid darkgreen;
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw;
+    border: 0.1vw solid darkgreen;
 }
 
 .lowerterminal {
-    padding: 12.5px;
+    padding: 0.75vw;
     width: fit-content;
     height: fit-content;
-    box-shadow: 10px 10px rgb(29, 27, 43);
+    box-shadow: 0.6vw 0.6vw rgb(29, 27, 43);
     background-color: black;
-    font-size: medium;
+    font-size: 0.835vw;
     font-family: "Roboto Mono";
-    border-color: lightcoral;
-    border-width: 5px;
-    border-radius: 1px;
     color: greenyellow;
 }
 
 section {
     width: auto;
-    margin: 4px;
-    margin-bottom: 10px;
-    padding: 5px;
-    border: 3px dashed darkgreen;
+    margin: 0.25vw;
+    margin-bottom: 0.6vw;
+    padding: 0.25vw;
+    border: 0.2vw dashed darkgreen;
 }
 
 section:hover {
     background-color: rgba(44, 44, 44, 0.624);
+    color: rgb(182, 255, 74);
 }
 
 p {
     width: fit-content;
     height: fit-content;
-    font-size: medium;
+    font-size: 0.835vw;
     font-family: "Roboto Mono";
-    margin: 3px;
+    margin: 0.25vw;
 }
 
 .title {
@@ -202,11 +203,11 @@ p {
 
 .css-holder {
     background-color: rgb(54, 54, 54);
-    font-size: large;   
-    border: 2px solid rgb(170, 170, 170);
+    font-size: 0.9vw;   
+    border: 0.125vw solid rgb(170, 170, 170);
     font-family: "Roboto Mono";
-    border-radius: 3px;
-    padding: 2px;
+    border-radius: 0.25vw;
+    padding: 0.2vw;
     color: rgb(255, 255, 255);
 }
 
@@ -214,11 +215,12 @@ input {
     background-color: rgb(31, 31, 31);
     font-size: large;
     font-family: "Roboto Mono";
+    font-size: 0.835vw;
     color: white;
     box-sizing: border-box;
-    border: 2px dotted white;
-    border-radius: 4px;
-    width: auto;
+    border: 0.125vw dotted white;
+    border-radius: 0.3vw;
+    height: 1.5vw;
 }
 
 a:link {

@@ -9,7 +9,8 @@ body {
     cursor: default;
     margin: 0;
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .center {
@@ -19,83 +20,76 @@ body {
     transform: translate(-50%, -50%); 
 }
 
-/* core mobile changes */
 .mobile {
-    position: absolute;
-    font-style: italic;
-    left: 3%;
-    top: 1%;
-    width: 94%;
+    display: none;
 }
 
 .mcent {
-    width: 90%;
-    height: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    display: grid;
 }
 
 .main {
     position: absolute;
-    left: 3%;
-    top: 39%;
-    width: 94%;
+    left: 1vw;
+    top: 1vw;
+    width: 31.75vw;
 }
 
 .projects {
     position: absolute; 
-    left: 3%;
-    top: 72.5%;
-    width: 94%;
+    left: 0%;
+    top: 110%;
+    width: 100%;
 }
 
 .friends {
     position: absolute;
-    left: 3%;
-    top: 251%;
-    width: 94%;
+    left: 0%;
+    top: 585%;
+    width: 100%;
 }
 
 .extra {
+    display: none;
     position: absolute;
-    left: 3%;
-    top: 50%;
+    left: 0%;
+    top: 112%;
     width: 33%;
-    display: none; /* what mobile user is going to use this...? */
 }
 
 .extra-sub {
-    position: absolute;
-    left: 21%;
-    top: 23%;
-    width: 13%;
     display: none;
+    position: absolute;
+    left: 88%;
+    top: 63%;
+    width: 50%;
 }
 
 .switch {
+    display: none;
     position: absolute;
-    left: 0%;
-    top: 95%;
-    width: 35%;
+    left: 0vw;
+    top: 41.5vw;
+    width: 10%;
     background-color: rgb(44, 39, 75);
-    border: 2px solid rgb(43, 40, 59);
-    height: 161%;
+    border: 0.1vw solid rgb(43, 40, 59);
+    height: 7vw;
 }
 
 .warning {
     position: absolute;
-    left: 0.5%;
-    top: 245%;
+    z-index: 1000;
+    left: 0%;
+    top: 1263%;
     width: 100%;
-    display: none;
 }
 
 .normal {
-    font-size: x-large;
+    font-size: 1.4vw;
 }
 
 .subnormal {
-    font-size: large;
+    font-size: 0.9vw;
 }
 
 .hidden {
@@ -110,7 +104,7 @@ body {
     color: whitesmoke;
     display: grid;
     background-color: rgb(43, 43, 43);
-    border: 2px solid green;
+    border: 0.11vw solid green;
 }
 
 .description {
@@ -118,23 +112,26 @@ body {
 }
 
 .special {
-    font-size: x-large;
+    font-size: 1.4vw;
     font-family: "Zen Dots", cursive;
     padding: 1%;
 }
 
 .subspecial {
-    font-size: large;
+    font-size: 0.9vw;
     font-family: "Zen Dots", cursive;
 }
 
 .hlinked {
-    font-size: large;
+    font-size: 0.9vw;
     color: greenyellow;
     font-family: "Roboto Mono";
     background-color: rgb(29, 27, 43);
+    height: 1.4vw; /* set width manually for each elem... css is a pain */
+    text-align: center;
+    width: 6vw;
     border: none;
-    display: inline-block;
+    display: inline;
     cursor: pointer;
 }
 
@@ -143,16 +140,13 @@ body {
 }
 
 .terminal {
-    padding: 15px;
+    padding: 0.82vw;
     width: fit-content;
     height: fit-content;
-    box-shadow: 10px 10px rgb(29, 27, 43);
+    box-shadow: 0.65vw 0.65vw rgb(29, 27, 43);
     background-color: black;
-    font-size: medium;
+    font-size: 0.835vw;
     font-family: "Roboto Mono";
-    border-color: lightcoral;
-    border-width: 5px;
-    border-radius: 1px;
     color: greenyellow;
 }
 
@@ -162,48 +156,46 @@ body {
 
 .seperator {
     width: 100%;
-    border: 1.5px dashed darkgreen;
+    border: 0.1vw dashed darkgreen;
 }
 
 .sexy-seperator {
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid darkgreen;
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw;
+    border: 0.1vw solid darkgreen;
 }
 
 .lowerterminal {
-    padding: 12.5px;
+    padding: 0.75vw;
     width: fit-content;
     height: fit-content;
-    box-shadow: 10px 10px rgb(29, 27, 43);
+    box-shadow: 0.6vw 0.6vw rgb(29, 27, 43);
     background-color: black;
-    font-size: medium;
+    font-size: 0.835vw;
     font-family: "Roboto Mono";
-    border-color: lightcoral;
-    border-width: 5px;
-    border-radius: 1px;
     color: greenyellow;
 }
 
 section {
     width: auto;
-    margin: 4px;
-    margin-bottom: 10px;
-    padding: 5px;
-    border: 3px solid darkgreen;
+    margin: 0.25vw;
+    margin-bottom: 0.6vw;
+    padding: 0.25vw;
+    border: 0.2vw dashed darkgreen;
 }
 
 section:hover {
     background-color: rgba(44, 44, 44, 0.624);
+    color: rgb(182, 255, 74);
 }
 
 p {
     width: fit-content;
     height: fit-content;
-    font-size: medium;
+    font-size: 0.835vw;
     font-family: "Roboto Mono";
-    margin: 3px;
+    margin: 0.25vw;
 }
 
 .title {
@@ -213,11 +205,11 @@ p {
 
 .css-holder {
     background-color: rgb(54, 54, 54);
-    font-size: large;   
-    border: 2px solid rgb(170, 170, 170);
+    font-size: 0.9vw;   
+    border: 0.125vw solid rgb(170, 170, 170);
     font-family: "Roboto Mono";
-    border-radius: 3px;
-    padding: 2px;
+    border-radius: 0.25vw;
+    padding: 0.2vw;
     color: rgb(255, 255, 255);
 }
 
@@ -225,11 +217,12 @@ input {
     background-color: rgb(31, 31, 31);
     font-size: large;
     font-family: "Roboto Mono";
+    font-size: 0.835vw;
     color: white;
     box-sizing: border-box;
-    border: 2px dotted white;
-    border-radius: 4px;
-    width: auto;
+    border: 0.125vw dotted white;
+    border-radius: 0.3vw;
+    height: 1.5vw;
 }
 
 a:link {

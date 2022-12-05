@@ -1,17 +1,6 @@
 function applyCss() {
-    var styling = document.getElementById("custom-styling").value;
-    if (styling.length < 1) {
-        return;
-    }
-    var st = "";
-    for (var i = 0; i < styling.length; i++) {
-        if ((i % 54) == 0 && i > 0 || (styling[i+1] == "}" && styling[i] != ";") || styling[i-1] == "{" || styling[i-1] == ";") {
-            st += "\n";
-        }
-        st += styling[i];
-    }
     var code = document.getElementById("code");
-    code.value = st;
+    var styling = code.value;
     // add to style object
     var ps = document.head.getElementsByTagName("style");
     if (ps.length > 0) {
@@ -27,9 +16,17 @@ function applyCss() {
 }
 
 // loads the appropriate styling depending on whether the user is on mobile or pc
-function loadAppropriateStylings() {
+function loadAppropriateStylings() { 
+    // reset css textarea
+    var area = document.getElementById("code");
+    area.value = area.innerHTML;
+    // load correct css
+    var elem = document.head.getElementsByTagName("link");
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        var elem = document.head.getElementsByTagName("link");
-        elem[0]["href"] = "mobile.css";
+        /*elem[0]["href"] = "mobile.css";*/
+        // for now
+        elem[0]["href"] = "styles.css";
+    } else {
+        elem[0]["href"] = "styles.css";
     }
 }
