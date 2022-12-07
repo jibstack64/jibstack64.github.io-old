@@ -1,5 +1,8 @@
 # jibstack64.github.io
 
-The site is currently under development.
+![GitHub](https://img.shields.io/github/license/jibstack64/jibstack64.github.io)
 
-Trust me, some parts don't work as expected, or size up as they should.
+### Status
+Desktop: **WORKING**
+||
+Mobile: **BROKEN**

@@ -14,14 +14,6 @@
 </head>
 <body onload="loadAppropriateStylings()">
     <div class="main"> 
-        <div class="warning">
-            <div class="terminal">
-                <div class="help">
-                    This website is designed to work on a desktop screen resolution.<br>
-                    If you experience any issues, this is likely the cause.
-                </div>
-            </div>
-        </div>
         <div class="terminal"> 
             <b class="special">jibstack64();</b><br>
             <b class="subnormal">A 15 year old software engineer from Dorset, England.</b>
@@ -37,38 +29,47 @@
             <a class="hidden" target="_blank" href="https://reddit.com/u/jibbbb1234">
                 <button class="hlinked">Reddit</button>
             </a>
-            <a class="hidden" target="_blank" onclick="alert('Coming soon...')">
+            <a class="hidden" target="_blank" href="mailto:josephbedford@proton.me">
                 <button class="hlinked">Protonmail</button>
             </a>
         </div>
         <div class="mobile">Mobile version.</div>
         <div class="extra">
             <div class="terminal">
-                <textarea class="css-holder" id="code" title="Loaded CSS" rows="20" cols="53">
-/* Here you can put your own CSS! Cus' why not!
-
-Just copy and paste your CSS here, and push the button above!
-
-If you are looking for the names of classes, elements, etc, use the inspect tool; it has never failed a soul!
-
-Before you ask: I do infact use this to test changes before they are published!!*/
-
-body {
-    display: initial;
-}
-                </textarea>
+                <b class="special">About me</b><br>
+                <div class="sexy-seperator"></div>
+                <b class="normal">Hobbies</b><br>
+                <p>
+                    My hobbies most notably consist of software (sometimes web) development, electronics and gym.
+                    I occasionally dabble in higher-level maths, mostly as an extension to programming, or out of pure boredom.
+                    Of course, it is impossible to be consistent with all of these - I will occasionally stop engaging in
+                    one or more of these for the sake of exams and/or changes in my personal life.
+                </p>
+                <b class="normal">Family</b><br>
+                <p>
+                    I come from a very chill household. My dad owns a <a target="_blank" href="https://www.eurotubes-uk.com/">small business</a>,
+                    meaning that we are not twangled in financial struggles very often. I tend to spend quite a bit of time talking to my
+                    parents; my siblings, being heavily addicted to Roblox, would not say the same about themselves. My sister
+                    aims to be a piano artist and my brother a YouTuber, quite adorable, but fumbled by the truths of
+                    academics and life in general.
+                </p>
+                <b class="normal">Future</b><br>
+                <p>
+                    In the future I aim to go to WC, either straight into a Computer Science BTEC or for
+                    the Engineering-Maths-Physics A-Level trio. After that? Well who knows, Its a good 3-4 years away!
+                </p>
             </div>
         </div>
         <div class="extra-sub">
             <div class="terminal">
-                <button class="hlinked" style="width: 1.15vw" onclick="applyCss();" id="submit" style="float: right;">✓</button>
+                <img class="enlarge" title="My 'logo'." src="images/pfp.jpg" width="30px">
             </div>
         </div>
         <div class="projects">
             <div class="terminal">
                 <b class="special">Recent projects</b><br>
                 <div class="sexy-seperator"></div>
-                <section>
+                <section class="project">
                     <b class="title">know-it-all</b><br>
                     <p>
                         Know it all is a standalone executable for managing a set of data; whether it be people, passwords,
@@ -78,7 +79,7 @@ body {
                         <a target="_blank" href="https://github.com/jibstack64/know-it-all/releases/latest">Download</a>
                     </p>
                 </section>
-                <section>
+                <section class="project">
                     <b class="title">bounce</b><br>
                     <p>
                         I hadn't done proper game development for a couple of years until this point; to get back into
@@ -86,7 +87,7 @@ body {
                         <a target="_blank" href="https://github.com/jibstack64/bounce/releases/latest">Download</a>
                     </p>
                 </section>
-                <section>
+                <section class="project">
                     <b class="title">boxpush</b><br>
                     <p>
                         A small command-line game that I designed and wrote in C++.
@@ -95,7 +96,7 @@ body {
                         <a target="_blank" href="https://github.com/jibstack64/boxpush/releases/latest">Download</a>
                     </p>
                 </section>
-                <section>
+                <section class="project">
                     <b class="title">spotispy</b><br>
                     <p>
                         Spotis.py is my implementation of a so-called "Playlist sniffer". When ran, it will
@@ -104,7 +105,7 @@ body {
                         <a target="_blank" href="https://github.com/jibstack64/spotispy">Download</a>
                     </p>
                 </section>
-                <section>
+                <section class="project">
                     <b class="title">pretty</b><br>
                     <p>
                         A console colouring library for C++, in a single header file. It is designed for Unix-like systems,
@@ -118,29 +119,183 @@ body {
         </div>
         <div class="friends">
             <div class="terminal">
-                <b class="special">Buddies</b>
+                <b class="special">Buddy mentions</b>
                 <div class="sexy-seperator"></div>
+                <article>
+                    <section class="badge-sect">
+                        <div class="badge">
+                            <img class="mcent" src="images/jumbledFox.png" width="100%" title="Jumbled's fox profile pic!"><br>
+                            <b class="subnormal" style="height: fit-content;">JumbledFox</b>
+                        </div>
+                        <p class="description">
+                            This fox has <a target="_blank" href="https://jumbledfox.github.io">talent</a>!
+                        </p>
+                    </section>
+                    <section class="badge-sect">
+                        <div class="badge">
+                            <img class="mcent" src="images/liath.png" width="100%" title="Liath's art"><br>
+                            <b class="subnormal">Liathers</b>
+                        </div>
+                        <p class="description">
+                            A bloody <a target="_blank" href="https://github.com/Liathers">good programmer</a>.
+                        </p>
+                    </section>
+                    <section class="badge-sect">
+                        <div class="badge">
+                            <img class="mcent" src="images/not-applicable.jpg" width="100%" title="Not applicable."><br>
+                            <b class="subnormal">Breeze</b>
+                        </div>
+                        <p class="description">
+                            Not a programmer, but an old friend.
+                        </p>
+                    </section>
+                    <section class="badge-sect">
+                        <div class="badge">
+                            <img class="mcent" src="images/not-applicable.jpg" width="100%" title="Not applicable."><br>
+                            <b class="subnormal">Elisa</b>
+                        </div>
+                        <p class="description">
+                            My girlfriend, Elisa!
+                        </p>
+                    </section>
+                </article>
+            </div>
+        </div>
+        <div class="offer">
+            <div class="lowerterminal">
+                <b class="subspecial">Are you looking for some help?</b>
+                <div class="sexy-seperator"></div>
+                <p>
+                    If you are starting up an interesting FOSS project, feel free to <a target="_blank" href="mailto:josephbedford@proton.me">email me</a>, I'll be sure to help out!
+                </p>
+            </div>
+        </div>
+        <div class="games">
+            <div class="terminal">
+                <b class="special">Games</b>
+                <div class="sexy-seperator"></div>
+                <b class="subnormal">UNDER DEVELOPMENT!</b>
+                <p>
+                    Here I will place some raylib WebAssembly-compiled games I will be developing over the next months.<br>
+                    Heres what you can expect:
+                </p>
+                <ol class="list">
+                    <li>
+                        <b>Bounce</b>, the small Pong clone.
+                    </li>
+                    <li>
+                        A game where you fire trig-waves to explode watermelons!
+                    </li>
+                    <li>
+                        A command-oriented game where you traverse a world.
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="terminal">
+                <b class="special">Gallery</b>
+                <div class="sexy-seperator"></div>
+                <b class="subnormal">Here, a wonderful collection of pictures from the last 2 years. There is more to come!</b>
                 <section>
-                    <div class="badge">
-                        <img class="mcent" src="images/jumbledFox.png" width="100%"><br>
-                        <b class="subnormal">JumbledFox</b>
+                    <div class="slideshow">
+                        <div class="slide fade">
+                            <div class="numbered-text">1 / 5</div>
+                            <img class="slide-img" src="images/gallery/1.jpg">
+                            <div class="text">Fun times earlier this year.</div>
+                        </div>
+                        <div class="slide fade">
+                            <div class="numbered-text">2 / 5</div>
+                            <img class="slide-img" src="images/gallery/2.jpg">
+                            <div class="text">Me and Leo go outside?!</div>
+                        </div>
+                        <div class="slide fade">
+                            <div class="numbered-text">3 / 5</div>
+                            <img class="slide-img" src="images/gallery/3.png">
+                            <div class="text">My girlfriend's rat, Nyx.</div>
+                        </div>
+                        <div class="slide fade">
+                            <div class="numbered-text">4 / 5</div>
+                            <img class="slide-img" src="images/gallery/4.jpg">
+                            <div class="text">2021 me being as lurky as ever.</div>
+                        </div>
+                        <div class="slide fade">
+                            <div class="numbered-text">5 / 5</div>
+                            <img class="slide-img" src="images/gallery/5.png">
+                            <div class="text">He did the face, guys!</div>
+                        </div>
+                        <a class="previous" onclick="moveSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="moveSlide(1)">&#10095;</a>
                     </div>
-                    <p class="description">
-                        This fox has talent, go check out <a target="_blank" href="https://jumbledfox.github.io">him out</a>!
-                    </p>
-                </section>
-                <section>
-                    <div class="badge">
-                        <img class="mcent" src="images/liath.png" width="100%"><br>
-                        <b class="subnormal">Liathers</b>
-                    </div>
-                    <p class="description">
-                        Haven't spoken to this chap in a while, but hes a bloody <a target="_blank" href="https://github.com/Liathers">good programmer</a>!
-                    </p>
                 </section>
             </div>
         </div>
+        <div class="suggestions">
+            <div class="terminal">
+                <b class="special">Suggestions board</b>
+                <div class="sexy-seperator"></div>
+                <b class="subnormal">UNDER DEVELOPMENT!</b>
+                <p>
+                    Here you will be able to post suggestions to a board. I will moderate and consider each suggestion,
+                    and if one seems like a positive or creative idea, I will add it to the board for passerbyers to vote on.
+                </p><br>
+                &nbsp;<input id="suggestion-input" title="Suggestion input."> <button class="hlinked" onclick="submitSuggestion()">Submit</button>
+                <table>
+                    <tr style="text-align: center;">
+                        <th style="border-width: 0.175vw;">Suggestion</th>
+                        <th style="border-width: 0.175vw;">Votes</th>
+                    </tr>
+                    <tr id="row-0">
+                        <th id="sugg01">&nbsp;</th>
+                        <th id="sugg02">&nbsp;</th>
+                    </tr>
+                    <tr id="row-1">
+                        <th id="sugg11">&nbsp;</th>
+                        <th id="sugg12">&nbsp;</th>
+                    </tr>
+                    <tr id="row-2">
+                        <th id="sugg21">&nbsp;</th>
+                        <th id="sugg22">&nbsp;</th>
+                    </tr>
+                    <tr id="row-3">
+                        <th id="sugg31">&nbsp;</th>
+                        <th id="sugg32">&nbsp;</th>
+                    </tr>
+                    <tr id="row-4">
+                        <th id="sugg41">&nbsp;</th>
+                        <th id="sugg42">&nbsp;</th>
+                    </tr>
+                    <tr id="row-5">
+                        <th id="sugg51">&nbsp;</th>
+                        <th id="sugg52">&nbsp;</th>
+                    </tr>
+                    <tr id="row-6">
+                        <th id="sugg61">&nbsp;</th>
+                        <th id="sugg62">&nbsp;</th>
+                    </tr>
+                    <tr id="row-7">
+                        <th id="sugg71">&nbsp;</th>
+                        <th id="sugg72">&nbsp;</th>
+                    </tr>
+                    <tr id="row-8">
+                        <th id="sugg81">&nbsp;</th>
+                        <th id="sugg82">&nbsp;</th>
+                    </tr>
+                    <tr id="row-9">
+                        <th id="sugg91">&nbsp;</th>
+                        <th id="sugg92">&nbsp;</th>
+                    </tr>
+                    <tr id="row-10">
+                        <th id="sugg101">&nbsp;</th>
+                        <th id="sugg102">&nbsp;</th>
+                    </tr>
+                    <tr id="row-11">
+                        <th id="sugg111">&nbsp;</th>
+                        <th id="sugg112">&nbsp;</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
-    <div class="switch"></div>
 </body>
 </html>

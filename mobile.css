@@ -30,27 +30,26 @@ body {
 
 .main {
     position: absolute;
-    left: 1vw;
-    top: 1vw;
-    width: 31.75vw;
+    left: 3.0.0vw;
+    top: 3.0.0vw;
+    width: 95.25vw;
 }
 
 .projects {
     position: absolute; 
-    left: 0%;
-    top: 110%;
-    width: 100%;
+    left: 104%;
+    top: 0;
+    width: 162.0.0vw;
 }
 
 .friends {
     position: absolute;
-    left: 0%;
-    top: 585%;
-    width: 100%;
+    left: 278%;
+    top: 0%;
+    width: 7.5%;
 }
 
 .extra {
-    display: none;
     position: absolute;
     left: 0%;
     top: 112%;
@@ -58,38 +57,37 @@ body {
 }
 
 .extra-sub {
-    display: none;
     position: absolute;
+    display: inline;
     left: 88%;
     top: 63%;
     width: 50%;
 }
 
 .switch {
-    display: none;
     position: absolute;
-    left: 0vw;
-    top: 41.5vw;
-    width: 10%;
+    left: 0.0vw;
+    top: 124.5vw;
+    width: 100%;
     background-color: rgb(44, 39, 75);
-    border: 0.1vw solid rgb(43, 40, 59);
-    height: 7vw;
+    border: 0.3.0.0vw solid rgb(43, 40, 59);
+    height: 21.0vw;
 }
 
 .warning {
     position: absolute;
     z-index: 1000;
-    left: 0%;
-    top: 1263%;
-    width: 100%;
+    left: 200%;
+    top: 480%;
+    width: 102.0vw;
 }
 
 .normal {
-    font-size: 1.4vw;
+    font-size: 4.199999999999999vw;
 }
 
 .subnormal {
-    font-size: 0.9vw;
+    font-size: 2.7vw;
 }
 
 .hidden {
@@ -104,7 +102,7 @@ body {
     color: whitesmoke;
     display: grid;
     background-color: rgb(43, 43, 43);
-    border: 0.11vw solid green;
+    border: 0.13.0.0vw solid green;
 }
 
 .description {
@@ -112,24 +110,24 @@ body {
 }
 
 .special {
-    font-size: 1.4vw;
+    font-size: 4.199999999999999vw;
     font-family: "Zen Dots", cursive;
     padding: 1%;
 }
 
 .subspecial {
-    font-size: 0.9vw;
+    font-size: 2.7vw;
     font-family: "Zen Dots", cursive;
 }
 
 .hlinked {
-    font-size: 0.9vw;
+    font-size: 2.7vw;
     color: greenyellow;
     font-family: "Roboto Mono";
     background-color: rgb(29, 27, 43);
-    height: 1.4vw; /* set width manually for each elem... css is a pain */
+    height: 4.199999999999999vw; /* set width manually for each elem... css is a pain */
     text-align: center;
-    width: 6vw;
+    width: 18.0vw;
     border: none;
     display: inline;
     cursor: pointer;
@@ -140,12 +138,12 @@ body {
 }
 
 .terminal {
-    padding: 0.82vw;
+    padding: 2.46vw;
     width: fit-content;
     height: fit-content;
-    box-shadow: 0.65vw 0.65vw rgb(29, 27, 43);
+    box-shadow: 1.9500000000000002vw 1.9500000000000002vw rgb(29, 27, 43);
     background-color: black;
-    font-size: 0.835vw;
+    font-size: 2.505vw;
     font-family: "Roboto Mono";
     color: greenyellow;
 }
@@ -156,33 +154,33 @@ body {
 
 .seperator {
     width: 100%;
-    border: 0.1vw dashed darkgreen;
+    border: 0.3.0.0vw dashed darkgreen;
 }
 
 .sexy-seperator {
     width: 100%;
-    margin-top: 0.75vw;
-    margin-bottom: 0.75vw;
-    border: 0.1vw solid darkgreen;
+    margin-top: 2.25vw;
+    margin-bottom: 2.25vw;
+    border: 0.3.0.0vw solid darkgreen;
 }
 
 .lowerterminal {
-    padding: 0.75vw;
+    padding: 2.25vw;
     width: fit-content;
     height: fit-content;
-    box-shadow: 0.6vw 0.6vw rgb(29, 27, 43);
+    box-shadow: 0.18.0vw 0.18.0vw rgb(29, 27, 43);
     background-color: black;
-    font-size: 0.835vw;
+    font-size: 2.505vw;
     font-family: "Roboto Mono";
     color: greenyellow;
 }
 
 section {
     width: auto;
-    margin: 0.25vw;
-    margin-bottom: 0.6vw;
-    padding: 0.25vw;
-    border: 0.2vw dashed darkgreen;
+    margin: 0.75vw;
+    margin-bottom: 0.18.0vw;
+    padding: 0.75vw;
+    border: 0.6000000000000001vw dashed darkgreen;
 }
 
 section:hover {
@@ -193,9 +191,9 @@ section:hover {
 p {
     width: fit-content;
     height: fit-content;
-    font-size: 0.835vw;
+    font-size: 2.505vw;
     font-family: "Roboto Mono";
-    margin: 0.25vw;
+    margin: 0.75vw;
 }
 
 .title {
@@ -205,11 +203,11 @@ p {
 
 .css-holder {
     background-color: rgb(54, 54, 54);
-    font-size: 0.9vw;   
-    border: 0.125vw solid rgb(170, 170, 170);
+    font-size: 2.7vw;   
+    border: 0.375vw solid rgb(170, 170, 170);
     font-family: "Roboto Mono";
-    border-radius: 0.25vw;
-    padding: 0.2vw;
+    border-radius: 0.75vw;
+    padding: 0.6000000000000001vw;
     color: rgb(255, 255, 255);
 }
 
@@ -217,12 +215,12 @@ input {
     background-color: rgb(31, 31, 31);
     font-size: large;
     font-family: "Roboto Mono";
-    font-size: 0.835vw;
+    font-size: 2.505vw;
     color: white;
     box-sizing: border-box;
-    border: 0.125vw dotted white;
-    border-radius: 0.3vw;
-    height: 1.5vw;
+    border: 0.375vw dotted white;
+    border-radius: 0.8999999999999999vw;
+    height: 4.5vw;
 }
 
 a:link {

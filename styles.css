@@ -25,7 +25,7 @@ body {
 }
 
 .mcent {
-    display: grid;
+    width: 7.8vw;
 }
 
 .main {
@@ -37,53 +37,81 @@ body {
 
 .projects {
     position: absolute; 
-    left: 104%;
+    left: 104.5%;
     top: 0;
-    width: 54vw;
+    width: 42.2vw;
 }
 
 .friends {
     position: absolute;
-    left: 278%;
+    display: grid;
+    left: 242%;
     top: 0%;
-    width: 7.5%;
+    width: 100%;
+    height: 100%;
 }
 
 .extra {
     position: absolute;
     left: 0%;
     top: 112%;
-    width: 33%;
+    width: 100%;
+}
+
+.offer {
+    position: absolute;
+    left: 242%;
+    top: 394%;
+    width: 65%;
+}
+
+
+.massive-seperator {
+    position: absolute;
+    left: 242%;
+    top: 394%;
+    width: 65%;
 }
 
 .extra-sub {
     position: absolute;
-    display: inline;
-    left: 88%;
-    top: 63%;
-    width: 50%;
-}
-
-.switch {
-    position: absolute;
-    left: 0vw;
-    top: 41.5vw;
+    display: block;
+    left: 87.75%;
+    top: 61%;
     width: 100%;
-    background-color: rgb(44, 39, 75);
-    border: 0.1vw solid rgb(43, 40, 59);
-    height: 7vw;
 }
 
-.warning {
+.games {
     position: absolute;
-    z-index: 1000;
-    left: 200%;
-    top: 480%;
-    width: 34vw;
+    padding-bottom: 4%;
+    left: 0%;
+    top: 505%;
+    width: 137%;
+}
+
+.suggestions {
+    position: absolute;
+    padding-bottom: 4%;
+    left: 0%;
+    top: 691%;
+    width: 137%;
+}
+
+.gallery {
+    position: absolute;
+    padding-bottom: 4%;
+    left: 141%;
+    top: 505%;
+    width: 600%;
+}
+
+/* for image */
+.extra-sub:hover {
+    z-index: 3000;
 }
 
 .normal {
-    font-size: 1.4vw;
+    font-size: 1.1vw;
 }
 
 .subnormal {
@@ -96,7 +124,9 @@ body {
 
 .badge {
     align-content: center;
+    align-self: center;
     text-align: center;
+    float: left;
     width: auto;
     height: auto;
     color: whitesmoke;
@@ -106,11 +136,12 @@ body {
 }
 
 .description {
-    text-align: left;
+    text-align: center;
+    float: inline-start;
 }
 
 .special {
-    font-size: 1.4vw;
+    font-size: 1.30vw;
     font-family: "Zen Dots", cursive;
     padding: 1%;
 }
@@ -148,6 +179,11 @@ body {
     color: greenyellow;
 }
 
+/* woah!! :) */
+.terminal:hover {
+    background-color: rgb(8, 8, 8);;
+}
+
 .help {
     cursor: help;
 }
@@ -175,16 +211,37 @@ body {
     color: greenyellow;
 }
 
+/* woah!! :) */
+.lowerterminal:hover {
+    background-color: rgb(8, 8, 8);
+}
+
 section {
     width: auto;
+    align-items: center;
     margin: 0.25vw;
-    margin-bottom: 0.6vw;
+    margin-bottom: 0.2vw;
     padding: 0.25vw;
     border: 0.2vw dashed darkgreen;
 }
 
+.project {
+    margin-bottom: 0.6vw;
+}
+
+.badge-sect {
+    width: 8.1vw;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 0.2vw;
+    grid-auto-rows: auto;
+}
+
 section:hover {
-    background-color: rgba(44, 44, 44, 0.624);
+    background-color: rgba(29, 29, 29, 0.624);
     color: rgb(182, 255, 74);
 }
 
@@ -211,6 +268,14 @@ p {
     color: rgb(255, 255, 255);
 }
 
+.enlarge {
+    width: 1.7vw;
+}
+
+.enlarge:hover {
+    width: 100%;
+}
+
 input {
     background-color: rgb(31, 31, 31);
     font-size: large;
@@ -233,4 +298,101 @@ a:visited {
 
 a:hover {
     color: antiquewhite;
+}
+
+.slideshow {
+    width: 50vw;
+    height: 40vw;
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    align-items: center;
+    display: none;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2vw;
+    padding: 1vw;
+    color: greenyellow;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    font-size: 1.2vw;
+    transition: 0.6s ease;
+    border-radius: 0 0.5vw 0.5vw 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 0.5vw 0 0 0.5vw;
+}
+
+.previous:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0.4);
+    font-size: 2vw; 
+    padding: 0.5vw 1vw;
+    position: absolute;
+    bottom: 0.5vw;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+}
+
+.numbered-text {
+    color: whitesmoke;
+    background-color: rgba(1, 1, 1, 0.5);
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slide-img {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    max-height: 39vw;
+    min-height: 39vw;
+    max-width: 50vw;
+}
+
+.list {
+    list-style-type: square;
+}
+
+table, th, td {
+    background-color: rgb(27, 27, 27);
+    border: 0.05vw solid darkgreen;
+}
+
+th, td {
+    text-align: left;
+}
+
+table {
+    margin: 0.7vw;
+    border-collapse: collapse;
+    width: 96.5%;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
