@@ -50,14 +50,15 @@
                     I come from a very chill household. My dad owns a <a target="_blank" href="https://www.eurotubes-uk.com/">small business</a>,
                     meaning that we are not twangled in financial struggles very often. I tend to spend quite a bit of time talking to my
                     parents; my siblings, being heavily addicted to Roblox, would not say the same about themselves. My sister
-                    aims to be a piano artist and my brother a YouTuber, quite adorable, but fumbled by the truths of
-                    academics and life in general.
+                    aims to be a piano artist and my brother a YouTuber, quite adorable, but fumbled by
+                    academics and post-school.
                 </p>
                 <b class="normal">Future</b><br>
                 <p>
                     In the future I aim to go to WC, either straight into a Computer Science BTEC or for
                     the Engineering-Maths-Physics A-Level trio. After that? Well who knows, Its a good 3-4 years away!
                 </p>
+                <br>
             </div>
         </div>
         <div class="extra-sub">
@@ -143,7 +144,7 @@
                     <section class="badge-sect">
                         <div class="badge">
                             <img class="mcent" src="images/not-applicable.jpg" width="100%" title="Not applicable."><br>
-                            <b class="subnormal">Breeze</b>
+                            <b class="badge-text">Breeze</b>
                         </div>
                         <p class="description">
                             Not a programmer, but an old friend.
@@ -234,15 +235,18 @@
             <div class="terminal">
                 <b class="special">Suggestions board</b> <b class="offline" id="status" onload="suggestionsUpVisual();">OFFLINE</b>
                 <div class="sexy-seperator"></div>
-                <b class="subnormal">UNDER DEVELOPMENT!</b>
                 <p>
-                    Here you will be able to post suggestions to a board. I will moderate and consider each suggestion,
-                    and if one seems like a positive or creative idea, I will add it to the board for passerbyers to vote on.
-                </p><br>
-                &nbsp;<input id="suggestion-input" title="Suggestion input."> <button class="hlinked" onclick="submitSuggestion()">Submit</button>
+                    Here you can add your suggestions to what you think I should develop, whether it be a general project
+                    or a feature to this website.<br><br>
+                    You can suggest a maximum of 3 things until the board is cleared again. You have 3 votes: you may put all
+                    3 of your votes into one suggestion, if you so wish.
+                </p>
+                &nbsp;<div id="infields" style="padding-left: 1vw;">
+                    <input id="suggestion-input" title="Suggestion input."> <button id="submit-button" class="hlinked" onclick="submitSuggestion()">Submit</button>
+                </div>
                 <table class="top-table">
                     <tr id="dont-touch" style="text-align: center;">
-                        <th style="border-width: 0.175vw;">Suggestion</th>
+                        <th class="suggestion-table-pusher" style="border-width: 0.175vw;">Suggestion</th>
                         <th style="border-width: 0.175vw;">Votes</th>
                     </tr>
                 </table>

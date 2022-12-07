@@ -118,19 +118,23 @@ body {
     font-size: 0.9vw;
 }
 
+.badge-text {
+    font-size: 0.9vw;
+    
+}
+
 .hidden {
     display: contents;
 }
 
 .badge {
     align-content: center;
-    align-self: center;
     text-align: center;
     float: left;
     width: auto;
     height: auto;
     color: whitesmoke;
-    display: grid;
+    display: inline;
     background-color: rgb(43, 43, 43);
     border: 0.11vw solid green;
 }
@@ -166,6 +170,19 @@ body {
 
 .hlinked:hover {
     background-color: rgb(46, 43, 69);
+}
+
+.hlinked-nohover {
+    font-size: 0.9vw;
+    color: greenyellow;
+    font-family: "Roboto Mono";
+    background-color: rgb(29, 27, 43);
+    height: 1.4vw; /* set width manually for each elem... css is a pain */
+    text-align: center;
+    width: 6vw;
+    border: none;
+    display: inline;
+    cursor: pointer;
 }
 
 .terminal {
@@ -302,7 +319,7 @@ a:hover {
 
 .slideshow {
     width: 50vw;
-    height: 40vw;
+    height: 40.55vw;
     position: relative;
     margin: auto;
 }
@@ -368,8 +385,8 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     margin: auto;
-    max-height: 39vw;
-    min-height: 39vw;
+    max-height: 40.55vw;
+    min-height: 40.55vw;
     max-width: 50vw;
 }
 
@@ -384,6 +401,13 @@ table, th, td {
 
 th, td {
     text-align: left;
+    padding-left: 0.1vw;
+}
+
+.suggestion-table-pusher {
+    min-width: 35.5vw;
+    max-width: 35.5vw;
+    width: 35.5vw;
 }
 
 .online, .offline {
@@ -409,6 +433,34 @@ table {
 
 .top-table {
     margin: 0.7vw;
+}
+
+.vote-button {
+    font-size: 0.7vw;
+    color: greenyellow;
+    font-family: "Roboto Mono";
+    background-color: rgb(27, 43, 32);
+    text-align: center;
+    width: 3vw;
+    border: none;
+    display: inline;
+    cursor: pointer;
+    float: center;
+    height: auto;
+    border: 0.05vw solid darkgreen;
+}
+
+.vote-num {
+    float: center;
+    height: auto;
+    text-align: center;
+    display: grid;
+    width: 1.26vw;
+    font-size: 0.7vw;
+}
+
+.vote-button:hover {
+    background-color: rgb(54, 69, 43);
 }
 
 @keyframes fade {
