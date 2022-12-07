@@ -386,10 +386,29 @@ th, td {
     text-align: left;
 }
 
+.online, .offline {
+    width: 1vw;
+}
+
+.online {
+    background-color: green;
+    color: whitesmoke;
+}
+
+.offline {
+    background-color: rgb(135, 0, 0);
+    color: whitesmoke;
+}
+
 table {
-    margin: 0.7vw;
+    overflow: auto;
     border-collapse: collapse;
     width: 96.5%;
+    margin-left: 0.7vw;
+}
+
+.top-table {
+    margin: 0.7vw;
 }
 
 @keyframes fade {
