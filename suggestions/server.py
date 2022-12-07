@@ -51,7 +51,7 @@ signal.signal(signal.SIGTERM, write_out)
 def make_response(t: tuple[str, int]):
     resp = flask.make_response(t)
     resp.headers["Access-Control-Allow-Origin"] = "*"
-    resp.headers["Content-Type"] = "text/html"
+    resp.headers["Content-Type"] = "text/plain"
     return resp
 
 @app.route("/suggestions", methods=["POST", "GET"])
