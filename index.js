@@ -19,9 +19,13 @@ function applyCss() {
 function loadAppropriateStylings() { 
     // load correct css
     var elem = document.head.getElementsByTagName("link");
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        elem[0]["href"] = "mobile.css";
-    } else {
+    try {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            elem[0]["href"] = "mobile.css";
+        } else {
+            elem[0]["href"] = "styles.css";
+        }
+    } catch {
         elem[0]["href"] = "styles.css";
     }
 
