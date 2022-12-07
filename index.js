@@ -1,7 +1,7 @@
 // ip and port for suggestions server
 const IP = "192.248.144.13";
 const PORT = 80;
-const URL = "https://" + IP + ":" + PORT
+const URL = "http://" + IP + ":" + PORT
 
 function applyCss() {
     var code = document.getElementById("code");

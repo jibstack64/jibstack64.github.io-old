@@ -10,7 +10,7 @@ import re
 
 # static variables
 NAME = "SUGGESTIONS-SERVER"
-HOST, PORT = "127.0.0.1", 5152
+HOST, PORT = "192.248.144.13", 80
 VOTES = "./votes.json"
 PROFANITIES_URL = "https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/en"
 
@@ -50,6 +50,8 @@ signal.signal(signal.SIGTERM, write_out)
 # for modifying vals in the future
 def make_response(t: tuple[str, int]):
     resp = flask.make_response(t)
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+    resp.headers["Content-Type"] = "text/html"
     return resp
 
 @app.route("/suggestions", methods=["POST", "GET"])
@@ -94,7 +96,7 @@ def suggestions():
             except:
                 continue # malformed, ignore
             clean.append(a)
-        return flask.jsonify(clean)
+        return make_response((json.dumps(clean), 200))
 
 @app.route("/vote", methods=["POST"])
 def vote():
@@ -120,8 +122,8 @@ def vote():
 
 @app.route("/up", methods=["GET"])
 def up():
-    return flask.jsonify("Yes")
+    return make_response(("", 200))
 
 # run
 if __name__ == "__main__":
-    app.run(HOST, PORT, ssl_context="adhoc")
+    app.run(HOST, PORT)
