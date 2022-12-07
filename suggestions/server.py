@@ -76,8 +76,6 @@ def suggestions():
                     count += 1
             if count >= 3:
                 return make_response(("You can only post 3 suggestions until the next suggestion-cycle.", 401))
-            elif count < 4:
-                return make_response(("Your response must be above"))
             votes.append({
                 "id": rand(),
                 "from": request.remote_addr,
