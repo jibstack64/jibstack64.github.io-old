@@ -124,4 +124,4 @@ def up():
 
 # run
 if __name__ == "__main__":
-    app.run(HOST, PORT)
+    app.run(HOST, PORT, ssl_context="adhoc")
