@@ -1,6 +1,6 @@
 // ip and port for suggestions server
-const IP = "127.0.0.1";
-const PORT = 5152;
+const IP = "192.248.144.13";
+const PORT = 80;
 const URL = "http://" + IP + ":" + PORT
 
 function applyCss() {
