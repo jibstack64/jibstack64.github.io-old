@@ -15,19 +15,6 @@ function applyCss() {
     }
 }
 
-// loads the appropriate styling depending on whether the user is on mobile or pc
-function loadAppropriateStylings() { 
-    // load correct css
-    var elem = document.head.getElementsByTagName("link");
-    if (elem.length > 0) {
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            elem[0]["href"] = "mobile.css";
-        } else {
-            elem[0]["href"] = "styles.css";
-        }
-    }
-}
-
 // 100% mine :) (https://www.w3schools.com/howto/howto_js_slideshow.asp)
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -46,8 +33,22 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
 } 
+
+// loads the appropriate styling depending on whether the user is on mobile or pc
+function loadAppropriateStylings() { 
+    // load correct css
+    var elem = document.head.getElementsByTagName("link");
+    if (elem.length > 0) {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            elem[0]["href"] = "mobile.css";
+        } else {
+            elem[0]["href"] = "styles.css";
+        }
+    }
+
+    showSlides(1);
+}
 
 // suggestion code
 function submitSuggestion() {
