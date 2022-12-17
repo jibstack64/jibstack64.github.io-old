@@ -12,247 +12,61 @@
     <meta content="https://jibstack64.github.io/images/pfp.jpg" property="og:image"/>
     <meta content="#78ff7f" data-react-helmet="true" name="theme-color"/>
 </head>
-<body onload="loadAppropriateStylings()">
-    <div class="main"> 
-        <div class="terminal"> 
-            <b class="special">jibstack64();</b><br>
-            <b class="subnormal">A 15 year old software engineer from Dorset, England.</b>
+<body>
+    <div class="content">
+        <div class="block">
+            <b class="title">jibstack64();</b>
         </div>
-        <div class="lowerterminal">
-            <div class="seperator"></div><br>
-            <a class="hidden" target="_blank" href="/">
-                <button class="hlinked">Home</button>
-            </a>
-            <a class="hidden" target="_blank" href="https://github.com/jibstack64">
-                <button class="hlinked">GitHub</button>
-            </a>
-            <a class="hidden" target="_blank" href="https://reddit.com/u/jibbbb1234">
-                <button class="hlinked">Reddit</button>
-            </a>
-            <a class="hidden" target="_blank" href="mailto:josephbedford@proton.me">
-                <button class="hlinked">Protonmail</button>
-            </a>
-        </div>
-        <div class="mobile">Mobile version.</div>
-        <div class="extra">
-            <div class="terminal">
-                <b class="special">About me</b><br>
-                <div class="sexy-seperator"></div>
-                <b class="normal">Hobbies</b><br>
-                <p>
-                    My hobbies most notably consist of software (sometimes web) development, electronics and gym.
-                    I occasionally dabble in higher-level maths, mostly as an extension to programming, or out of pure boredom.
-                    Of course, it is impossible to be consistent with all of these - I will occasionally stop engaging in
-                    one or more of these for the sake of exams and/or changes in my personal life.
-                </p>
-                <b class="normal">Family</b><br>
-                <p>
-                    I come from a very chill household. My dad owns a <a target="_blank" href="https://www.eurotubes-uk.com/">small business</a>,
-                    meaning that we are not twangled in financial struggles very often. I tend to spend quite a bit of time talking to my
-                    parents; my siblings, being heavily addicted to Roblox, would not say the same about themselves. My sister
-                    aims to be a piano artist and my brother a YouTuber, quite adorable, but fumbled by
-                    academics and post-school.
-                </p>
-                <b class="normal">Future</b><br>
-                <p>
-                    In the future I aim to go to WC, either straight into a Computer Science BTEC or for
-                    the Engineering-Maths-Physics A-Level trio. After that? Well who knows, Its a good 3-4 years away!
-                </p>
-                <br>
-            </div>
-        </div>
-        <div class="extra-sub">
-            <div class="terminal">
-                <img class="enlarge" title="My 'logo'." src="images/pfp.jpg" width="30px">
-            </div>
-        </div>
-        <div class="projects">
-            <div class="terminal">
-                <b class="special">Recent projects</b><br>
-                <div class="sexy-seperator"></div>
-                <section class="project">
-                    <b class="title">know-it-all</b><br>
-                    <p>
-                        Know it all is a standalone executable for managing a set of data; whether it be people, passwords,
-                        or credit-card details you can store it in an organised, catalogable way with KIAL.
-                        It has useful features such as database encryption, decryption, searching and more. I aim to add
-                        SSH(scp) and HTTP(S) reading and writing functionality for externally stored databases.
-                        <a target="_blank" href="https://github.com/jibstack64/know-it-all/releases/latest">Download</a>
-                    </p>
-                </section>
-                <section class="project">
-                    <b class="title">bounce</b><br>
-                    <p>
-                        I hadn't done proper game development for a couple of years until this point; to get back into
-                        the swing of gdev, I decided to make a Pong clone.
-                        <a target="_blank" href="https://github.com/jibstack64/bounce/releases/latest">Download</a>
-                    </p>
-                </section>
-                <section class="project">
-                    <b class="title">boxpush</b><br>
-                    <p>
-                        A small command-line game that I designed and wrote in C++.
-                        You, the smiley face ☺ push the boxes ▩ onto the targets X. It has a series of parameters,
-                        giving the player the option to customise the characters and maps.
-                        <a target="_blank" href="https://github.com/jibstack64/boxpush/releases/latest">Download</a>
-                    </p>
-                </section>
-                <section class="project">
-                    <b class="title">spotispy</b><br>
-                    <p>
-                        Spotis.py is my implementation of a so-called "Playlist sniffer". When ran, it will
-                        constantly "sniff" for playlists on the provided users - if any are removed, or created,
-                        it will be logged to the console and/or a Discord webhook URL.
-                        <a target="_blank" href="https://github.com/jibstack64/spotispy">Download</a>
-                    </p>
-                </section>
-                <section class="project">
-                    <b class="title">pretty</b><br>
-                    <p>
-                        A console colouring library for C++, in a single header file. It is designed for Unix-like systems,
-                        only using escape-sequences, however it does function on Windows 10 given that the program is running
-                        in Powershell or the modern Command Prompt.
-                        <a target="_blank" href="https://github.com/jibstack64/pretty/releases/latest">Download</a>
-                    </p>
-                </section>
-                Check out more projects on my <a target="_blank" href="https://github.com/jibstack64">Github</a>.
-            </div>
-        </div>
-        <div class="friends">
-            <div class="terminal">
-                <b class="special">Buddy mentions</b>
-                <div class="sexy-seperator"></div>
-                <article>
-                    <section class="badge-sect">
-                        <div class="badge">
-                            <img class="mcent" src="images/jumbledFox.png" width="100%" title="Jumbled's fox profile pic!"><br>
-                            <b class="subnormal" style="height: fit-content;">JumbledFox</b>
-                        </div>
-                        <p class="description">
-                            This fox has <a target="_blank" href="https://jumbledfox.github.io">talent</a>!
+        <div class="block">
+            <div class="layer-order">
+                <div class="layer">
+                    <div class="card">
+                        <b class="subtitle">know-it-all</b>
+                        <p>
+                            Know it all is a standalone executable for managing a set of data; whether it be people, passwords,
+                            or credit-card details you can store it in an organised, catalogable way with KIAL.
+                            It has useful features such as database encryption, decryption, searching and more. I aim to add
+                            SSH(scp) and HTTP(S) reading and writing functionality for externally stored databases.
                         </p>
-                    </section>
-                    <section class="badge-sect">
-                        <div class="badge">
-                            <img class="mcent" src="images/liath.png" width="100%" title="Liath's art"><br>
-                            <b class="subnormal">Liathers</b>
-                        </div>
-                        <p class="description">
-                            A bloody <a target="_blank" href="https://github.com/Liathers">good programmer</a>.
-                        </p>
-                    </section>
-                    <section class="badge-sect">
-                        <div class="badge">
-                            <img class="mcent" src="images/not-applicable.jpg" width="100%" title="Not applicable."><br>
-                            <b class="badge-text">Rose</b>
-                        </div>
-                        <p class="description">
-                            My friend whom aspires to be a game-dev.
-                        </p>
-                    </section>
-                    <section class="badge-sect">
-                        <div class="badge">
-                            <img class="mcent" src="images/not-applicable.jpg" width="100%" title="Not applicable."><br>
-                            <b class="subnormal">Elisa</b>
-                        </div>
-                        <p class="description">
-                            My girlfriend, Elisa!
-                        </p>
-                    </section>
-                </article>
-            </div>
-        </div>
-        <div class="offer">
-            <div class="lowerterminal">
-                <b class="subspecial">Are you looking for some help?</b>
-                <div class="sexy-seperator"></div>
-                <p>
-                    If you are starting up an interesting FOSS project, feel free to <a target="_blank" href="mailto:josephbedford@proton.me">email me</a>, I'll be sure to help out!
-                </p>
-            </div>
-        </div>
-        <div class="games">
-            <div class="terminal">
-                <b class="special">Games</b>
-                <div class="sexy-seperator"></div>
-                <b class="subnormal">UNDER DEVELOPMENT!</b>
-                <p>
-                    Here I will place some raylib WebAssembly-compiled games I will be developing over the next months.<br>
-                    Heres what you can expect:
-                </p>
-                <ol class="list">
-                    <li>
-                        <b>Bounce</b>, the small Pong clone.
-                    </li>
-                    <li>
-                        A game where you fire trig-waves to explode watermelons!
-                    </li>
-                    <li>
-                        A command-oriented game where you traverse a world.
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="gallery">
-            <div class="terminal">
-                <b class="special">Gallery</b>
-                <div class="sexy-seperator"></div>
-                <b class="subnormal">Here, a wonderful collection of pictures from the last 2 years. There is more to come!</b>
-                <section>
-                    <div class="slideshow">
-                        <div class="slide fade">
-                            <div class="numbered-text">1 / 5</div>
-                            <img class="slide-img" src="images/gallery/1.jpg">
-                            <div class="text">Fun times earlier this year.</div>
-                        </div>
-                        <div class="slide fade">
-                            <div class="numbered-text">2 / 5</div>
-                            <img class="slide-img" src="images/gallery/2.jpg">
-                            <div class="text">Me and Leo go outside?!</div>
-                        </div>
-                        <div class="slide fade">
-                            <div class="numbered-text">3 / 5</div>
-                            <img class="slide-img" src="images/gallery/3.png">
-                            <div class="text">My girlfriend's rat, Nyx.</div>
-                        </div>
-                        <div class="slide fade">
-                            <div class="numbered-text">4 / 5</div>
-                            <img class="slide-img" src="images/gallery/4.jpg">
-                            <div class="text">2021 me being as lurky as ever.</div>
-                        </div>
-                        <div class="slide fade">
-                            <div class="numbered-text">5 / 5</div>
-                            <img class="slide-img" src="images/gallery/5.png">
-                            <div class="text">He did the face, guys!</div>
-                        </div>
-                        <a class="previous" onclick="moveSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="moveSlide(1)">&#10095;</a>
                     </div>
-                </section>
-            </div>
-        </div>
-        <div class="suggestions">
-            <div class="terminal">
-                <b class="special">Suggestions board</b> <b class="offline" id="status" onload="suggestionsUpVisual();">OFFLINE</b>
-                <div class="sexy-seperator"></div>
-                <p>
-                    Here you can add your suggestions to what you think I should develop, whether it be a general project
-                    or a feature to this website.<br><br>
-                    You can suggest a maximum of 3 things until the board is cleared again. You have 3 votes: you may put all
-                    3 of your votes into one suggestion, if you so wish.
-                </p>
-                &nbsp;<div id="infields" style="padding-left: 1vw;">
-                    <input id="suggestion-input" title="Suggestion input."> <button id="submit-button" class="hlinked" onclick="submitSuggestion()">Submit</button>
+                    <div class="card">
+                        <b class="subtitle">bounce</b><br>
+                        <p>
+                            I hadn't done proper game development for a couple of years until this point; to get back into
+                            the swing of gdev, I decided to make a Pong clone.
+                            <a target="_blank" href="https://github.com/jibstack64/bounce/releases/latest">Download</a>
+                        </p>
+                    </div>
+                <div class="layer">
+                    <div class="card">
+                        <b class="subtitle">boxpush</b><br>
+                        <p>
+                            A small command-line game that I designed and wrote in C++.
+                            You, the smiley face ☺ push the boxes ▩ onto the targets X. It has a series of parameters,
+                            giving the player the option to customise the characters and maps.
+                            <a target="_blank" href="https://github.com/jibstack64/boxpush/releases/latest">Download</a>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <b class="subtitle">spotispy</b><br>
+                        <p>
+                            Spotis.py is my implementation of a so-called "Playlist sniffer". When ran, it will
+                            constantly "sniff" for playlists on the provided users - if any are removed, or created,
+                            it will be logged to the console and/or a Discord webhook URL.
+                            <a target="_blank" href="https://github.com/jibstack64/spotispy">Download</a>
+                        </p>
+                    </div>
                 </div>
-                <table class="top-table">
-                    <tr id="dont-touch" style="text-align: center;">
-                        <th class="suggestion-table-pusher" style="border-width: 0.175vw;">Suggestion</th>
-                        <th style="border-width: 0.175vw;">Votes</th>
-                    </tr>
-                </table>
-                <div style="width: 100%; height: 15.6vw; overflow:auto;">
-                    <table id="suggestions-table">
-                    </table>
+                <div class="layer">
+                    <div class="card">
+                        <b class="subtitle">pretty</b><br>
+                        <p>
+                            A console colouring library for C++, in a single header file. It is designed for Unix-like systems,
+                            only using escape-sequences, however it does function on Windows 10 given that the program is running
+                            in Powershell or the modern Command Prompt.
+                            <a target="_blank" href="https://github.com/jibstack64/pretty/releases/latest">Download</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
